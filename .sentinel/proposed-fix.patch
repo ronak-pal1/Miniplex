@@ -1,0 +1,11 @@
+--- a/Miniplex/client/src/components/Modals/PaymentModal.tsx
++++ b/Miniplex/client/src/components/Modals/PaymentModal.tsx
+@@ -48,7 +48,7 @@
+     setLoading(true);
+     const res = await userApi.post("/book", {
+       transactionId,
+       movieIds,
+-      userId: "gaeahaeha",
+       auditorium: slotInfo?.audi,
+       date: slotInfo?.date ? formatDate(slotInfo.date) : "",
+       noOfPersons: slotInfo?.noOfPerons,
